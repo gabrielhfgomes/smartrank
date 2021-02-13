@@ -1,7 +1,7 @@
 import { ArgumentMetadata, BadRequestException, PipeTransform } from "@nestjs/common";
 import { isEmpty } from "class-validator";
 
-export class JogadoresValidacaoParametrosPipe implements PipeTransform{
+export class ValidacaoParametrosPipe implements PipeTransform{
 
     transform(value: any, metadata: ArgumentMetadata) {
         if(isEmpty(value)) {
